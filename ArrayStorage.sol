@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT 
-pragma solidity 0.8.19;
+pragma solidity 0.8.24;
 
-contract ArrayStorage {
+contract SimpleStorage {
     uint256 favoriteNumber ;
 
     struct Person {
@@ -16,7 +16,7 @@ contract ArrayStorage {
 
     mapping(string => uint256) public nameToFavoriteNumber;
 
-    function save(uint256 _favoriteNumber) public
+    function store(uint256 _favoriteNumber) public
      {
         favoriteNumber = _favoriteNumber ;
         // favoriteNumber = _favoriteNumber + 1;
